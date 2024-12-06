@@ -1,6 +1,6 @@
 #include "Constantes.h"
 
-char Cmenu[] = "1.- Binary Search\n2.- Interpolation Search\n3.- Jump Search\n4.- Exponential Search\n5.- Shell Sort\n6.- Merge Sort\n7.- Selection Sort\n8.- Bucket Sort\n" ;
+char Cmenu[] = "1.- Binary Search\n2.- Interpolation Search\n3.- Jump Search\n4.- Exponential Search\n5.- Shell Sort\n6.- Merge Sort\n7.- Selection Sort\n8.- Bucket Sort\n9.- Radix Sort\nA.- Quick Sort\nB.- Ternary Search\nC.- Tabela Comparativa Algoritmos de Busqueda\nE.- Tabela Comparativa de Complexidade dos Algoritmos\n" ;
 
 const int CTAMANHOLISTAS = 20;
 const int CTAMANHOLISTASMAIOR = 50;
@@ -41,6 +41,30 @@ void CMostarAsListasAscendentes()
 	}
 	printf("\n");
 }
+
+void CMostarAsListasAscendentesMaiores()
+{
+	int i;
+	int j = 1;
+
+	while (j <= 5)
+	{
+		printf("A lista %d tem os valores: ", j);
+		for (i = 0; i < CTAMANHOLISTASMAIOR; i++)
+		{
+			if (j == 1)printf("%d ", Clista1M[i]);
+			if (j == 2)printf("%d ", Clista2M[i]);
+			if (j == 3)printf("%d ", Clista3M[i]);
+			if (j == 4)printf("%d ", Clista4M[i]);
+			if (j == 5)printf("%d ", Clista5M[i]);
+		}
+		printf("\n");
+		j++;
+	}
+	printf("\n");
+}
+
+
 
 void CMostrarUmaLista(int list[], int tamanho)
 {

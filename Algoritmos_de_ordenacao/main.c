@@ -21,6 +21,10 @@
 #include"MergeSort.h"
 #include"SelectionSort.h"
 #include"BucketSort.h"
+#include"RadixSort.h"
+#include"QuickSort.h"
+#include"TernarySearch.h"
+#include"Varios.h"
 
 int main()
 {
@@ -130,6 +134,49 @@ int main()
 				{
 					BuSortUsarAlgoritmo();
 				}
+				else if(o == '2')
+				{
+					BuSortUsarAlgoritmoInteiro();
+				}
+				break;
+			case '9':
+				printf(RaSortmenu);
+				scanf_s(" %c", &o, 1);
+				if (o == '1')
+				{
+					RaSortUsarAlgoritmo();
+				}
+				else if (o == '2')
+				{
+					RaSortComoFuncionaEmBinario();
+				}
+				break;
+			case 'A':
+				printf(QuSortmenu);
+				scanf_s(" %c", &o, 1);
+				if (o == '1')
+				{
+					QuSortUsarAlgoritmo();
+				}
+				
+				break;
+			case 'B':
+				printf(TSmenu);
+				scanf_s(" %c", &o, 1);
+				if (o == '1')
+				{
+					TSUsarAlgoritmo();
+				}
+				else if (o == '2')
+				{
+					TSExplicao();
+				}
+				break;
+			case 'C':
+				VComparcaoDeAlgoritmosDeBusqueda();
+				break;
+			case 'E':
+				VComplexidadeDosAlgoritmos();
 				break;
 			default:
 				printf("Por favor insire um valor correto\n");

@@ -146,12 +146,17 @@ float* CACriarArrayDePuntoFlotanteAoAzar(int min, int max, int tamanho)
 	return arr;
 }
 
-void CAPrintarArrayDePuntoFlotante(float arr[], int tamanho)
+//Se decimales é 1 vai printar com 2 decimais e se for 0 nao vaia printar os decimais
+void CAPrintarArrayDePuntoFlotante(float arr[], int tamanho,int decimais)
 {
 	int i;
 	for (i = 0; i < tamanho; i++)
 	{
-		printf("%.2f ", arr[i]);
+		if(decimais)
+			printf("%.2f ", arr[i]);
+		else
+			printf("%.0f ", arr[i]);
+
 	}
 	printf("\n");
 }

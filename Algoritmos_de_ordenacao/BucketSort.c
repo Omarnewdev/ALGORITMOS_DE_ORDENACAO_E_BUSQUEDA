@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char BuSortmenu[] = "1.- Usar o algoritmo\n-> ";
+char BuSortmenu[] = "1.- Usar o algoritmo com float\n2.- Usar o algoritmo com Inteiros\n-> ";
 
 // Función para insertar un número en un bucket usando realloc
 static void insertarEnBucket(float** bucket, int* tam, float num) {
@@ -97,11 +97,40 @@ void BuSortUsarAlgoritmo()
         return;
     }
     printf("O array que vai entrar na funcao e: ");
-    CAPrintarArrayDePuntoFlotante(arr, tamanho);
+    CAPrintarArrayDePuntoFlotante(arr, tamanho,1);
     printf("\n");
 
     BuSortBucketSort(arr, tamanho);
     printf("\n\nSaio assim: ");
-    CAPrintarArrayDePuntoFlotante(arr, tamanho);
+    CAPrintarArrayDePuntoFlotante(arr, tamanho,1);
+
+}
+
+void BuSortUsarAlgoritmoInteiro()
+{
+    const int INTERVALOMIN = 1;
+    const int INTERVALOMAX = 200;
+    //listas
+    float* arr;
+    //in
+    int tamanho;
+
+    printf("Vamos a criar uma lista para usar o algorimto entre o intervalo %d e %d\n", INTERVALOMIN, INTERVALOMAX);
+    printf("Vamos a precisar o tamanho da lista\n-> ");
+    scanf_s(" %d", &tamanho);
+
+    arr = CACriarArrayDePuntoFlotanteAoAzar(INTERVALOMIN, INTERVALOMAX, tamanho);
+    if (arr == NULL)
+    {
+        printf("Nao foi possivel alocar a memoria\n\n");
+        return;
+    }
+    printf("O array que vai entrar na funcao e: ");
+    CAPrintarArrayDePuntoFlotante(arr, tamanho,0);
+    printf("\n");
+
+    BuSortBucketSort(arr, tamanho);
+    printf("\n\nSaio assim: ");
+    CAPrintarArrayDePuntoFlotante(arr, tamanho,0);
 
 }

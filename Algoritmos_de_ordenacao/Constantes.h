@@ -26,6 +26,7 @@ extern int Clista5M[];
 //Mostrar as listas
 
 void CMostarAsListasAscendentes();
+void CMostarAsListasAscendentesMaiores();
 void CMostrarUmaLista(int list[], int tamanho);
 
 

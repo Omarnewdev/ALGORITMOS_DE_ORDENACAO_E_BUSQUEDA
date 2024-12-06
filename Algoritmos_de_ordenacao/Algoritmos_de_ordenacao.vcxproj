@@ -136,8 +136,12 @@
     <ClCompile Include="JumpSearch.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="MergeSort.c" />
+    <ClCompile Include="QuickSort.c" />
+    <ClCompile Include="RadixSort.c" />
     <ClCompile Include="SelectionSort.c" />
     <ClCompile Include="ShellSort.c" />
+    <ClCompile Include="TernarySearch.c" />
+    <ClCompile Include="Varios.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
@@ -148,8 +152,12 @@
     <ClInclude Include="InterpolationSearch.h" />
     <ClInclude Include="JumpSearch.h" />
     <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="RadixSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="ShellSort.h" />
+    <ClInclude Include="TernarySearch.h" />
+    <ClInclude Include="Varios.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

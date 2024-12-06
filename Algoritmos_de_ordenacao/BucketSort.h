@@ -14,6 +14,7 @@ extern char BuSortmenu[];
 //funcoes
 void BuSortBucketSort(float* arr, int tamanho);
 void BuSortUsarAlgoritmo();
+void BuSortUsarAlgoritmoInteiro();
 
 
 

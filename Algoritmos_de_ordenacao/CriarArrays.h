@@ -26,7 +26,7 @@ void CAPrintarArrayDeStrings(char **str, int tamanho);
 //Punto Flotante
 
 float* CACriarArrayDePuntoFlotanteAoAzar(int min, int max, int tamanho);
-void CAPrintarArrayDePuntoFlotante(float arr[], int tamanho);
+void CAPrintarArrayDePuntoFlotante(float arr[], int tamanho, int decimais);
 
 
 
